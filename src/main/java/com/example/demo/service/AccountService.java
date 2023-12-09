@@ -69,7 +69,7 @@ public class AccountService {
     }
 
     public List<Account> allAccounts() {
-        return accountRepository.findAll();
+        return (List<Account>) accountRepository.findAll();
     }
 
     public List<Account> allAccountsByUserId(UUID userId) {

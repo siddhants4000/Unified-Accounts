@@ -76,7 +76,7 @@ public class UserService {
 
 
     public List<User> getAllUsers() {
-        return userRepository.findAll();
+        return (List<User>) userRepository.findAll();
     }
 
     public WrapperResponse<UserResponse> allocateAccount(UUID userId, UUID accountId) {
